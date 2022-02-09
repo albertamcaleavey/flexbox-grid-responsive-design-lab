@@ -101,24 +101,26 @@ img {
     width: 500px;
     text-align: left;
     text-align: left;
-    grid-template-areas: 
-      "status name"
-      "img occupation"
-      "contact offer";
   }
+
   #status {
-    grid-area: status;
+    grid-column: 1;
+    grid-row: 1;
   }
 
   #name {
-    grid-area: name;
+    grid-column: 2;
+    grid-row: 1;
     text-align: left;
     background-color: lightgray;
+    justify-content: left;
+    padding-left: 15px;
   }
 
   img {
     display: grid;
-    grid-area: img;
+    grid-column: 1;
+    grid-row: 2;
     margin-bottom: 35px;
     margin-left: 35px;
   }
@@ -126,21 +128,29 @@ img {
   #occupation {
     display: block;
     text-align: left;
-    grid-area: occupation;
+    grid-column: 2;
+    grid-row: 2;
     background-color: lightgray;
+    padding-left: 15px;
   }
   
 #brand {
-    display: grid;
+    display: inline;
+    grid-column: 2;
+    grid-row: 3;
+    padding-left: 15px;
   }
   
   #contact {
-    grid-area: contact;
+    grid-column: 1;
+    grid-row: 4;
     height: 100%;
   }
 
   #offer {
-    grid-area: offer;
+    grid-column: 2;
+    grid-row: 4;
     background-color: lightgray;
+    padding-left: 15px;
   }
 }  
