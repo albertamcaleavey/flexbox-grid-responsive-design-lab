@@ -113,26 +113,27 @@ img {
   #name {
     grid-area: name;
     text-align: left;
+    background-color: lightgray;
   }
 
   img {
+    display: grid;
     grid-area: img;
-    margin: 10px;
-    justify-content: center;
-    align-content: center;
+    margin-bottom: 35px;
+    margin-left: 35px;
   }
 
   #occupation {
     display: block;
     text-align: left;
     grid-area: occupation;
+    background-color: lightgray;
   }
   
 #brand {
     display: grid;
   }
   
-
   #contact {
     grid-area: contact;
     height: 100%;
@@ -140,5 +141,6 @@ img {
 
   #offer {
     grid-area: offer;
+    background-color: lightgray;
   }
 }  
