@@ -53,7 +53,7 @@ main {
 }
 img {
   border-radius: 50%;
-  border: 4px;
+  border: green 3px solid;
 }
 
 #occupation {
@@ -61,10 +61,10 @@ img {
 }
 
 #contact {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  background-color: rgb(78, 180, 121);
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;  
+  background-color: rgb(78, 180, 121);;
 }
 
 
@@ -73,10 +73,15 @@ img {
 /* MEDIA QUERY */
 
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   body {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: auto 1fr auto;
+    /* these rules apply whenever the screen is at least 768px wide */
+    /* tablet - two column display */
+    /* grid-template-columns: 1fr 2fr;
+    grid-template-rows: 50px auto 30px;
+    grid-template-areas: 
+      "header header"
+      "side content"
+      "footer footer";
   }
-}
+} */ 
