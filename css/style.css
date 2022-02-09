@@ -86,8 +86,17 @@ img {
     text-align: left;
     text-align: left;
     grid-template-areas: 
-      "img name"
-      " occupation"
+      "status name"
+      "img occupation"
       "contact offer";
+  }
+
+  #occupation {
+    display: block;
+    text-align: left;
+  }
+
+  #name {
+    text-align: left;
   }
 }  
