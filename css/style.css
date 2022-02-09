@@ -54,6 +54,8 @@ main {
 #status {
   text-align: right;
   color: lightgray;
+  padding: 10px;
+  
 }
 img {
   border-radius: 50%;
@@ -62,17 +64,33 @@ img {
 
 #occupation {
   background-color: rgb(243, 243, 243);
+  padding: 3px;
 }
 
 #contact {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;  
   background-color: rgb(78, 180, 121);;
 }
 
+#contact > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 50%;
+  /* takes up 50% of the container= splits the element */
+}
 
+#phone {
+  background-color: rgb(95, 196, 120);
+  padding: 13px;
+}
 
+#chat {
+  background-color: rgb(41, 158, 90);
+  padding: 13px;
+}
 
 /* MEDIA QUERY */
 
