@@ -47,6 +47,10 @@ main {
   align-items: center;
 }
 
+#brand {
+  display: none;
+}
+
 #status {
   text-align: right;
   color: lightgray;
@@ -73,15 +77,17 @@ img {
 /* MEDIA QUERY */
 
 
-/* @media only screen and (min-width: 768px) {
-  body {
-    /* these rules apply whenever the screen is at least 768px wide */
-    /* tablet - two column display */
-    /* grid-template-columns: 1fr 2fr;
-    grid-template-rows: 50px auto 30px;
+ @media only screen and (min-width: 768px) {
+  main { 
+    display: grid;
+    grid-template-columns: 40% 60%; 
+    grid-template-rows: auto auto auto auto;
+    width: 500px;
+    text-align: left;
+    text-align: left;
     grid-template-areas: 
-      "header header"
-      "side content"
-      "footer footer";
+      "img name"
+      " occupation"
+      "contact offer";
   }
-} */ 
+}  
