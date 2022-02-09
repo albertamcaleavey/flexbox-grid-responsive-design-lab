@@ -29,9 +29,6 @@ body {
 }
 
 
-
-/* FLEXBOX */
-
 main {
   background-color: white;
   text-align: center;
@@ -57,6 +54,7 @@ main {
   padding: 10px;
   
 }
+
 img {
   border-radius: 50%;
   border: green 3px solid;
@@ -108,13 +106,39 @@ img {
       "img occupation"
       "contact offer";
   }
+  #status {
+    grid-area: status;
+  }
+
+  #name {
+    grid-area: name;
+    text-align: left;
+  }
+
+  img {
+    grid-area: img;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+  }
 
   #occupation {
     display: block;
     text-align: left;
+    grid-area: occupation;
+  }
+  
+#brand {
+    display: grid;
+  }
+  
+
+  #contact {
+    grid-area: contact;
+    height: 100%;
   }
 
-  #name {
-    text-align: left;
+  #offer {
+    grid-area: offer;
   }
 }  
