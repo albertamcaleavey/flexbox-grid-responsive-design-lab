@@ -57,7 +57,7 @@ main {
 
 img {
   border-radius: 50%;
-  border: green 3px solid;
+  border: 3px rgb(95, 196, 120) solid;
 }
 
 #occupation {
@@ -97,9 +97,8 @@ img {
   main { 
     display: grid;
     grid-template-columns: 40% 60%; 
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto;
     width: 500px;
-    text-align: left;
     text-align: left;
     margin: 0;
     padding: 0;
@@ -113,8 +112,7 @@ img {
   #name {
     grid-column: 2;
     grid-row: 1;
-    text-align: left;
-    background-color: lightgray;
+    background-color: rgb(243, 243, 243);
     justify-content: left;
     padding-left: 15px;
   }
@@ -122,8 +120,10 @@ img {
   img {
     display: grid;
     grid-column: 1;
-    grid-row: 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
     margin-left: 35px;
+    margin-bottom: 20px;
   }
 
   #occupation {
@@ -131,8 +131,9 @@ img {
     text-align: left;
     grid-column: 2;
     grid-row: 2;
-    background-color: lightgray;
+    background-color: rgb(243, 243, 243);
     padding-left: 15px;
+    height: 100%;
   }
   
 #brand {
@@ -140,6 +141,8 @@ img {
     grid-column: 2;
     grid-row: 3;
     padding-left: 15px;
+    background-color: rgb(243, 243, 243);
+    height: 100%;
   }
   
   #contact {
@@ -151,7 +154,7 @@ img {
   #offer {
     grid-column: 2;
     grid-row: 4;
-    background-color: lightgray;
+    background-color: rgb(243, 243, 243);
     padding-left: 15px;
   }
 }  
